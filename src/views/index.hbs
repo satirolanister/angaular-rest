@@ -1,0 +1,24 @@
+
+   <div class="row">
+    {{#each products}}
+        <div class="col-sm-6 col-md-4">
+            <div class="card mt-2">
+                <div class="card-body">
+                    <img class="imgproduct" src={{imagePath}} alt="">
+                    <hr>
+                    <div class="card-title d-flex justify-content.between align-items-center">
+                        <h4>{{title}}</h4>
+                    </div>
+                    <div>
+                        <p>{{description}}</p>
+                    </div>
+                    <div class="clearfix">
+                        <div class="pull-left">${{price}}</div>
+                        <a href="" class="btn btn-success pull-right"><i class="fa fa-cart-plus"></i> agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {{/each}}
+   </div>
