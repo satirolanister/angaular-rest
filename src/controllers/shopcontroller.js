@@ -1,7 +1,7 @@
 const ctrolShop = {};
 
 ctrolShop.renderCard = (req, res)=> {
-    res.send('carrito');
+    res.render('shop/car-shop.hbs');
 }
 
 ctrolShop.card = (req, res) => {

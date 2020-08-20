@@ -8,15 +8,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             
             <ul class="navbar-nav ml-auto">
+                {{#if user}}
                 <li class="nav-item">
                     <a href="/card" class="nav-link"><i class="fa fa-shopping-cart"></i> carrito</a>
                 </li>
+                {{else}}
                 <li class="nav-item">
                     <a href="/signin" class="nav-link"><i class="fa fa-user-circle-o"></i> ingresar</a>
                 </li>
                 <li class="nav-item">
                     <a href="/signup" class="nav-link"><i class="fa fa-user-plus"></i> registrarse</a>
                 </li>
+                {{/if}}
             </ul>
         </div>
     </div>
